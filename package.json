@@ -1,0 +1,29 @@
+{
+  "name": "url-shortening-api-master",
+  "version": "1.0.0",
+  "description": "Readme",
+  "main": "index.js",
+  "scripts": {
+    "htmlhint": "htmlhint src/*.html test/*.html",
+    "eslint": "eslint --ext .js src/ test/",
+    "pretest": "npm run eslint && npm run htmlhint",
+    "test": "jest --verbose --coverage",
+    "open-coverage-report": "opener ./coverage/lcov-report/index.html",
+    "start": "serve src/",
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loregunner/prueba-tecnica.git"
+  },
+  "author": "Lorena Rippe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loregunner/prueba-tecnica/issues"
+  },
+  "homepage": "https://github.com/loregunner/prueba-tecnica#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "start": "^5.1.0"
+  }
+}
